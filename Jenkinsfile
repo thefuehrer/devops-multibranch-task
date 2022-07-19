@@ -23,4 +23,10 @@ pipeline {
       }
     }
   }
+  post {
+    always {
+      emailext body: 'Build successfully', recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: 'Jenkins'
+      }
+    }
+  }
 }
