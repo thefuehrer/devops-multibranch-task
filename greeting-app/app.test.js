@@ -1,5 +1,5 @@
-const app = require('./app')
-const supertest = require('supertest');
+const app = require("./app")
+const supertest = require("supertest");
 const request = supertest(app);
 describe("/test endpoint", () => {
     it("should return a response", async () => {
