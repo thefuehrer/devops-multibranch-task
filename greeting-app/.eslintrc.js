@@ -7,6 +7,11 @@ module.exports = {
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
-    "rules": {
+    "rules" : {
+        "no-console": "off",
+        "quotes": [
+            "error",
+            "double"
+        ]
     }
 }
